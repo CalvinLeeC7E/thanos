@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #eee; }
+
+.thanos--item {
+  width: 350px; }
+  .thanos--item img {
+    width: inherit;
+    border-radius: 5px; }
+
+.thanos--container {
+  position: relative; }
+  .thanos--container canvas {
+    position: absolute;
+    transition: opacity 1.3s ease-out, -webkit-transform 1.3s ease-out;
+    transition: transform 1.3s ease-out, opacity 1.3s ease-out;
+    transition: transform 1.3s ease-out, opacity 1.3s ease-out, -webkit-transform 1.3s ease-out;
+    -webkit-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+    opacity: 1; }
